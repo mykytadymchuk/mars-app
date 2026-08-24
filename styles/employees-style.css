@@ -1,0 +1,15 @@
+.working {
+  color: green;
+}
+
+.employee-photo {
+  margin-top: 35px;
+  width: 75%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.employee-role {
+  margin-top: 10px;
+  font-size: 18px;
+}

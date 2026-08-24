@@ -1,0 +1,48 @@
+.main-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+#header-logo {
+  margin: 20px;
+  cursor: pointer;
+}
+
+#main-greetings {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #c11007;
+}
+
+.header-right-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-right: 30px;
+  color: white;
+}
+
+#main-edit-account {
+  margin-bottom: 10px;
+}
+
+#main-edit-account,
+#logout-button {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#main-edit-account:hover,
+#logout-button:hover {
+  color: #c11007;
+}
+
+#main-edit-account:active,
+#logout-button:active {
+  color: #9d0e07;
+}

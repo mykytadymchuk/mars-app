@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="src/mars-reklama.com.ua-favicon.ico"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general-style.css" />
+    <link rel="stylesheet" href="styles/flex-grid-page-style.css" />
+    <link rel="stylesheet" href="styles/search-bar-style.css" />
+    <link rel="stylesheet" href="styles/page-header-style.css" />
+    <link rel="stylesheet" href="styles/files-style.css" />
+    <title>Файли</title>
+  </head>
+  <body>
+    <div class="main-header">
+      <img
+        src="src/logo.jpg"
+        alt="mars-logo"
+        id="header-logo"
+        draggable="false"
+      />
+      <div class="search-bar-container">
+        <select
+          name="file-search-select"
+          id="file-search-select"
+          class="search-select"
+        >
+          <option value="file-name">Назва</option>
+          <option value="file-type">Тип</option>
+          <option value="file-access-type">Тип доступу</option>
+          <option value="file-created-date">Дата завантаження</option>
+        </select>
+        <input
+          type="text"
+          name="file-search"
+          id="file-search"
+          class="search-bar"
+          placeholder="Пошук"
+        />
+        <button class="search-button">
+          <img src="src/search.png" alt="search-button" draggable="false" />
+        </button>
+      </div>
+
+      <div class="add-new-item" id="add-new-file">+</div>
+
+      <div class="header-right-corner">
+        <p id="main-greetings">Вітаю, username!</p>
+      </div>
+    </div>
+    <div class="main-body">
+      <div class="flex-element">
+        <img
+          src="src/folder.png"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">Документи</p>
+        </div>
+
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img
+          src="src/folder.png"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">Драйвера</p>
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img
+          src="src/folder.png"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">Програми</p>
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img
+          src="src/folder.png"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">Звіти</p>
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img
+          src="src/logo.jpg"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">mars-logo.jpg</p>
+        </div>
+        <div class="flex-element-info-container">
+          <hr />
+          <p><span class="row-title">Дата завантаження:</span> ХХ-ХХ-ХХХХ</p>
+          <p><span class="row-title">Тип доступу:</span> Загальнодоступно</p>
+          <hr />
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+
+      <div class="flex-element">
+        <img
+          src="src/mars-reklama.com.ua-favicon.ico"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">mars-icon.jpg</p>
+        </div>
+        <div class="flex-element-info-container">
+          <hr />
+          <p><span class="row-title">Дата завантаження:</span> ХХ-ХХ-ХХХХ</p>
+          <p><span class="row-title">Тип доступу:</span> Загальнодоступно</p>
+          <hr />
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+
+      <div class="flex-element">
+        <img
+          src="src/onyx rip screenshot.png"
+          alt="folder"
+          class="files-icon"
+          draggable="false"
+        />
+        <div class="flex-element-main-info-container">
+          <p class="flex-element-name">onyx-rip-screenshot.png</p>
+        </div>
+        <div class="flex-element-info-container">
+          <hr />
+          <p><span class="row-title">Дата завантаження:</span> ХХ-ХХ-ХХХХ</p>
+          <p><span class="row-title">Тип доступу:</span> Загальнодоступно</p>
+          <hr />
+        </div>
+        <div class="flex-element-edit-container">
+          <p class="flex-element-edit">Редагувати</p>
+          <p class="flex-element-edit">Видалити</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const marsLogo = document.getElementById("header-logo");
+
+      marsLogo.addEventListener("click", () => {
+        window.location.href = "http://mars-app/main.html";
+      });
+    </script>
+  </body>
+</html>

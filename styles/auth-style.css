@@ -1,0 +1,88 @@
+body {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+p {
+  color: #c11007;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+#general-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+#logo-container {
+  margin-bottom: 100px;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 30px;
+}
+
+.submit-button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c11007;
+  background-color: #f2f3f4;
+  border: 2px solid #c11007;
+  border-radius: 10px;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #c11007;
+  color: #f2f3f4;
+}
+
+.submit-button:active {
+  opacity: 0.7;
+}
+
+label {
+  font-size: 25px;
+}
+
+.text-input {
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 2px solid #c11007;
+  width: 300px;
+}
+
+.text-input:focus {
+  outline: none;
+}

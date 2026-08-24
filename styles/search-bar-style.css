@@ -1,0 +1,95 @@
+.search-bar {
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  flex: 1;
+  min-width: 10px;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.search-bar:focus,
+.search-select:focus {
+  outline: none;
+}
+
+.search-button img {
+  width: 25px;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.send-message-button img {
+  width: 30px;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border: 3px solid #c11007;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 400px;
+  max-width: 1000px;
+}
+
+.search-button,
+.send-message-button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-left: 3px solid #c11007;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover,
+.search-select:hover,
+.send-message-button:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.search-button:active,
+.send-message-button:active {
+  background-color: rgb(208, 208, 208);
+}
+
+.search-select {
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  flex-shrink: 0;
+  border: none;
+  border-right: 3px solid #c11007;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-new-item {
+  color: #c11007;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid #c11007;
+  padding: 7px 60px 7px 60px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+}
+
+.add-new-item:hover {
+  background-color: #c11007;
+  color: white;
+}
+
+.add-new-item:active {
+  opacity: 0.8;
+}
