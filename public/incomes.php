@@ -66,7 +66,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -80,7 +80,7 @@
           <p class="income-position">150 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x4</p>
+          <p class="income-count">x4</p>
         </div>
       </div>
       <hr />
@@ -93,7 +93,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -108,7 +108,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
     </section>
@@ -127,7 +127,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -141,7 +141,7 @@
           <p class="income-position">150 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x4</p>
+          <p class="income-count">x4</p>
         </div>
       </div>
       <hr />
@@ -154,7 +154,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -169,7 +169,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
     </section>
@@ -188,7 +188,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -202,7 +202,7 @@
           <p class="income-position">150 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x4</p>
+          <p class="income-count">x4</p>
         </div>
       </div>
       <hr />
@@ -215,7 +215,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -230,7 +230,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
     </section>
@@ -249,7 +249,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -263,7 +263,7 @@
           <p class="income-position">150 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x4</p>
+          <p class="income-count">x4</p>
         </div>
       </div>
       <hr />
@@ -276,7 +276,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
       <hr />
@@ -291,7 +291,7 @@
           <p class="income-position">50 м</p>
         </div>
         <div class="right-side">
-          <p class="income-position">x1</p>
+          <p class="income-count">x1</p>
         </div>
       </div>
     </section>
