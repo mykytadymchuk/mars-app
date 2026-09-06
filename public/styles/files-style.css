@@ -1,0 +1,76 @@
+.files-icon {
+  margin-top: 35px;
+  width: 75%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.folder-icon {
+  margin-top: 35px;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.file-icon {
+  margin-top: 35px;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.files-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.previous-folder-button {
+  align-self: center;
+  color: #c11007;
+  background: #f2f3f4;
+  border: 2px solid #c11007;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.previous-folder-button:hover {
+  color: #f2f3f4;
+  background: #c11007;
+}
+
+.file-card[data-folder-id] {
+  cursor: pointer;
+}
+
+.file-action-form {
+  display: contents;
+}
+
+.file-type-options {
+  display: flex;
+  gap: 24px;
+  color: white;
+  font-size: 18px;
+}
+
+.file-type-options label,
+.file-type-options input,
+.file-input {
+  cursor: pointer;
+}
+
+.file-input {
+  width: 335px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 2px solid #c11007;
+  border-radius: 10px;
+  background: white;
+}

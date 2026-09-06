@@ -1,0 +1,14 @@
+body {
+  font-family: Roboto, Arial;
+  background-color: #262626;
+}
+
+p {
+  margin: 0px;
+}
+
+.none-message {
+  color: #c11007;
+  font-size: 30px;
+  font-weight: bold;
+}

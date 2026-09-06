@@ -1,0 +1,16 @@
+{
+    "name": "nikcr/mars-app",
+    "autoload": {
+        "psr-4": {
+            "Nikcr\\MarsApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mykyta Dymchuk"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^2.4"
+    }
+}
