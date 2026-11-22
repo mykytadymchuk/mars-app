@@ -83,6 +83,7 @@ body {
   font-weight: bold;
   color: #c11007;
   cursor: pointer;
+  text-decoration: none;
   transition: color 0.1s;
 }
 
@@ -90,6 +91,33 @@ body {
   font-weight: bold;
   color: #9e0e07;
 }
+
+.income-edit {
+  font: inherit;
+  font-weight: bold;
+  color: #c11007;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.income-edit:hover { color: #a80e05; }
+.income-edit:active { color: #910c05; }
+
+.income-delete-form { margin: 0; }
+.income-delete {
+  font: inherit;
+  font-weight: bold;
+  color: #c11007;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+.income-delete:hover { color: #a80e05; }
+.income-delete:active { color: #910c05; }
 
 .material-edit:hover,
 .stock-edit:hover {

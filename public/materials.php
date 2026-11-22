@@ -9,6 +9,55 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
 
 require_once __DIR__ . '/../services/databaseConnect.php';
 
+function materialText($value): string
+{
+    return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
+}
+
+$allMaterials = $materialsCollection->find([], ['sort' => ['name' => 1, 'createdAt' => 1]])->toArray();
+$parameterNames = [];
+foreach ($allMaterials as $material) {
+    foreach (($material['parameters'] ?? []) as $parameter) {
+        $name = trim((string) ($parameter['name'] ?? ''));
+        if ($name !== '') $parameterNames[$name] = $name;
+    }
+}
+natcasesort($parameterNames);
+
+$selectedField = (string) ($_GET['field'] ?? 'name');
+$search = trim((string) ($_GET['search'] ?? ''));
+if ($selectedField !== 'name' && $selectedField !== 'type' && !isset($parameterNames[substr($selectedField, 6)])) $selectedField = 'name';
+$contains = static function ($value, string $needle): bool {
+    $value = (string) $value;
+    return function_exists('mb_stripos') ? mb_stripos($value, $needle, 0, 'UTF-8') !== false : stripos($value, $needle) !== false;
+};
+
+$materialsByType = ['roll' => [], 'sheet' => []];
+$hasMaterials = false;
+foreach ($allMaterials as $material) {
+    $type = $material['type'] ?? '';
+    if (!isset($materialsByType[$type])) continue;
+    $matches = $search === '';
+    if ($search !== '') {
+        if ($selectedField === 'name') {
+            $matches = $contains($material['name'] ?? '', $search);
+        } elseif ($selectedField === 'type') {
+            $matches = $contains($type === 'roll' ? 'Рулонний' : 'Листовий', $search);
+        } else {
+            $parameterName = substr($selectedField, 6);
+            foreach (($material['parameters'] ?? []) as $parameter) {
+                if (($parameter['name'] ?? '') !== $parameterName) continue;
+                foreach (($parameter['values'] ?? []) as $value) {
+                    if ($contains($value, $search)) { $matches = true; break 2; }
+                }
+            }
+        }
+    }
+    if (!$matches) continue;
+    $materialsByType[$type][(string) ($material['name'] ?? '')][] = $material;
+    $hasMaterials = true;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -36,16 +85,13 @@ require_once __DIR__ . '/../services/databaseConnect.php';
             <img src="src/logo.jpg" alt="mars-logo" id="header-logo" draggable="false" />
             <div class="search-bar-container">
                 <select name="field" id="supplier-search-select" class="search-select">
-                    <option value="">Матеріал</option>
-                    <option value="">Тип</option>
-                    <option value="">Серія</option>
-                    <option value="">Покриття</option>
-                    <option value="">Колір</option>
-                    <option value="">Щільність</option>
-                    <option value="">Розмір</option>
-                    <option value="">Довжина</option>
+                    <option value="name" <?= $selectedField === 'name' ? 'selected' : '' ?>>Матеріал</option>
+                    <option value="type" <?= $selectedField === 'type' ? 'selected' : '' ?>>Тип</option>
+                    <?php foreach ($parameterNames as $parameterName): ?>
+                        <option value="param:<?= materialText($parameterName) ?>" <?= $selectedField === 'param:' . $parameterName ? 'selected' : '' ?>><?= materialText($parameterName) ?></option>
+                    <?php endforeach; ?>
                 </select>
-                <input type="text" name="search" id="supplier-search" class="search-bar" placeholder="Пошук">
+                <input type="text" name="search" id="supplier-search" class="search-bar" placeholder="Пошук" value="<?= materialText($search) ?>">
                 <button class="search-button">
                     <img src="src/search.png" alt="search-button" draggable="false" />
                 </button>
@@ -62,6 +108,7 @@ require_once __DIR__ . '/../services/databaseConnect.php';
 
     </form>
 
+    <?php if (false): ?>
     <main class="main-body">
         <p class="material-type">Рулонні матеріали</p>
         <section class="table">
@@ -473,6 +520,43 @@ require_once __DIR__ . '/../services/databaseConnect.php';
             </div>
         </section>
 
+    </main>
+    <?php endif; ?>
+
+    <main class="main-body">
+        <?php if (!$hasMaterials): ?>
+            <p class="none-message">Не було знайдено жодного матеріалу!</p>
+        <?php else: ?>
+        <?php foreach (['roll' => 'Рулонні матеріали', 'sheet' => 'Листові матеріали'] as $type => $title): ?>
+            <?php if (empty($materialsByType[$type])) continue; ?>
+            <p class="material-type"><?= $title ?></p>
+            <?php foreach ($materialsByType[$type] as $name => $materials): ?>
+                <section class="table">
+                    <div class="table-header"><?= materialText($name) ?></div>
+                    <?php foreach ($materials as $number => $material): ?>
+                        <?php if ($number > 0): ?><hr /><?php endif; ?>
+                        <div class="table-element">
+                            <div class="left-side">
+                                <p class="material-number"><?= $number + 1 ?></p>
+                                <p class="material-position"><?= materialText($material['name'] ?? '') ?></p>
+                                <?php foreach (($material['parameters'] ?? []) as $parameter): ?>
+                                    <?php $values = $parameter['values'] ?? []; ?>
+                                    <?php if (count($values) === 1): ?>
+                                        <p class="material-position" title="<?= materialText($parameter['name'] ?? '') ?>"><?= materialText($values[0]) ?></p>
+                                    <?php elseif (count($values) > 1): ?>
+                                        <div class="multiple-params" title="<?= materialText($parameter['name'] ?? '') ?>">
+                                            <?php foreach ($values as $value): ?><p class="material-position"><?= materialText($value) ?></p><?php endforeach; ?>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </div>
+                            <div class="right-side"><a class="material-edit" href="editMaterial.php?id=<?= urlencode((string) $material['_id']) ?>">Редагувати</a></div>
+                        </div>
+                    <?php endforeach; ?>
+                </section>
+            <?php endforeach; ?>
+        <?php endforeach; ?>
+        <?php endif; ?>
     </main>
 
     <script>

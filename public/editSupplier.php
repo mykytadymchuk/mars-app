@@ -165,17 +165,17 @@ foreach ($supplier as $fieldName => $fieldValue) {
                         <?php foreach ($customFields as $fieldName => $fieldValue): ?>
 
                             <div class="custom-field-row">
-
-                                <input type="text" name="customFieldName[]" class="text-input custom-field-name"
-                                    placeholder="Назва поля" value="<?= htmlspecialchars($fieldName) ?>" />
-
-                                <input type="text" name="customFieldValue[]" class="text-input custom-field-value"
-                                    placeholder="Значення" value="<?= htmlspecialchars($fieldValue) ?>" />
-
-                                <button type="button" class="remove-custom-field">
-                                    ×
-                                </button>
-
+                                <div class="custom-field-cols-container">
+                                    <div class="custom-field-cols-element">
+                                        <p class="form-element">Параметр</p>
+                                        <input type="text" name="customFieldName[]" class="text-input custom-field-name" placeholder="Назва поля" value="<?= htmlspecialchars($fieldName) ?>" />
+                                    </div>
+                                    <div class="custom-field-cols-element">
+                                        <p class="form-element">Значення</p>
+                                        <input type="text" name="customFieldValue[]" class="text-input custom-field-value" placeholder="Значення" value="<?= htmlspecialchars($fieldValue) ?>" />
+                                    </div>
+                                    <div class="custom-field-cols-element"><button type="button" class="remove-custom-field" aria-label="Видалити поле">×</button></div>
+                                </div>
                             </div>
 
                         <?php endforeach; ?>
@@ -260,27 +260,11 @@ foreach ($supplier as $fieldName => $fieldValue) {
             fieldRow.classList.add("custom-field-row");
 
             fieldRow.innerHTML = `
-            <input
-                type="text"
-                name="customFieldName[]"
-                class="text-input custom-field-name"
-                placeholder="Назва поля"
-            />
-
-            <input
-                type="text"
-                name="customFieldValue[]"
-                class="text-input custom-field-value"
-                placeholder="Значення"
-            />
-
-            <button
-                type="button"
-                class="remove-custom-field"
-            >
-                ×
-            </button>
-        `;
+            <div class="custom-field-cols-container">
+                <div class="custom-field-cols-element"><p class="form-element">Параметр</p><input type="text" name="customFieldName[]" class="text-input custom-field-name" placeholder="Назва поля" /></div>
+                <div class="custom-field-cols-element"><p class="form-element">Значення</p><input type="text" name="customFieldValue[]" class="text-input custom-field-value" placeholder="Значення" /></div>
+                <div class="custom-field-cols-element"><button type="button" class="remove-custom-field" aria-label="Видалити поле">×</button></div>
+            </div>`;
 
             customFieldsContainer.appendChild(fieldRow);
         });
