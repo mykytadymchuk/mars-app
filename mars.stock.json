@@ -1,0 +1,904 @@
+[{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b974"
+  },
+  "incomeId": {
+    "$oid": "6b049ae9d94e1cc54a0d7394"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b975"
+  },
+  "incomeId": {
+    "$oid": "6b049ae9d94e1cc54a0d7394"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b976"
+  },
+  "incomeId": {
+    "$oid": "6b049ae9d94e1cc54a0d7394"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b977"
+  },
+  "incomeId": {
+    "$oid": "6b049b05d94e1cc54a0d7395"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b978"
+  },
+  "incomeId": {
+    "$oid": "6b049b05d94e1cc54a0d7395"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b979"
+  },
+  "incomeId": {
+    "$oid": "6b049b05d94e1cc54a0d7395"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97a"
+  },
+  "incomeId": {
+    "$oid": "6b049b05d94e1cc54a0d7395"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97b"
+  },
+  "incomeId": {
+    "$oid": "6b049b2e37823192c50369f2"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "1220 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97c"
+  },
+  "incomeId": {
+    "$oid": "6b049b2e37823192c50369f2"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "1220 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97d"
+  },
+  "incomeId": {
+    "$oid": "6b049b2e37823192c50369f2"
+  },
+  "materialId": {
+    "$oid": "6aa570925ecec1ff24041888"
+  },
+  "materialName": "ПВХ",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "1220 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97e"
+  },
+  "incomeId": {
+    "$oid": "6b049b73d94e1cc54a0d7396"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b97f"
+  },
+  "incomeId": {
+    "$oid": "6b049b73d94e1cc54a0d7396"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b980"
+  },
+  "incomeId": {
+    "$oid": "6b049b8d37823192c50369f3"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b981"
+  },
+  "incomeId": {
+    "$oid": "6b049b8d37823192c50369f3"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b982"
+  },
+  "incomeId": {
+    "$oid": "6b049ba0d94e1cc54a0d7397"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Молочний"
+    },
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b983"
+  },
+  "incomeId": {
+    "$oid": "6b049ba0d94e1cc54a0d7397"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Молочний"
+    },
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b984"
+  },
+  "incomeId": {
+    "$oid": "6b049ba0d94e1cc54a0d7397"
+  },
+  "materialId": {
+    "$oid": "6aa570657d39692ee20d13b8"
+  },
+  "materialName": "Акрил",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Молочний"
+    },
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b985"
+  },
+  "incomeId": {
+    "$oid": "6b049bb437823192c50369f4"
+  },
+  "materialId": {
+    "$oid": "6aa566b37d39692ee20d13b2"
+  },
+  "materialName": "Банер",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "110 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b986"
+  },
+  "incomeId": {
+    "$oid": "6b049bb437823192c50369f4"
+  },
+  "materialId": {
+    "$oid": "6aa566b37d39692ee20d13b2"
+  },
+  "materialName": "Банер",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "110 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b987"
+  },
+  "incomeId": {
+    "$oid": "6b049bc2d94e1cc54a0d7398"
+  },
+  "materialId": {
+    "$oid": "6aa566b37d39692ee20d13b2"
+  },
+  "materialName": "Банер",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "320 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b988"
+  },
+  "incomeId": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "materialId": {
+    "$oid": "6aa570e97d39692ee20d13b9"
+  },
+  "materialName": "АКП",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b989"
+  },
+  "incomeId": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "materialId": {
+    "$oid": "6aa570e97d39692ee20d13b9"
+  },
+  "materialName": "АКП",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98a"
+  },
+  "incomeId": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "materialId": {
+    "$oid": "6aa570e97d39692ee20d13b9"
+  },
+  "materialName": "АКП",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98b"
+  },
+  "incomeId": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "materialId": {
+    "$oid": "6aa570e97d39692ee20d13b9"
+  },
+  "materialName": "АКП",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98c"
+  },
+  "incomeId": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "materialId": {
+    "$oid": "6aa570e97d39692ee20d13b9"
+  },
+  "materialName": "АКП",
+  "type": "sheet",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98d"
+  },
+  "incomeId": {
+    "$oid": "6b049ca6d94e1cc54a0d7399"
+  },
+  "materialId": {
+    "$oid": "6aa56ff15ecec1ff24041887"
+  },
+  "materialName": "Холст",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "152 см"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98e"
+  },
+  "incomeId": {
+    "$oid": "6b049cba37823192c50369f6"
+  },
+  "materialId": {
+    "$oid": "6aa56ff15ecec1ff24041887"
+  },
+  "materialName": "Холст",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "127 см"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b98f"
+  },
+  "incomeId": {
+    "$oid": "6b049d0637823192c50369f7"
+  },
+  "materialId": {
+    "$oid": "6aa56edb5ecec1ff24041884"
+  },
+  "materialName": "Плівка Китай",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Покриття",
+      "value": "Мат"
+    },
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Ширина",
+      "value": "152 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b990"
+  },
+  "incomeId": {
+    "$oid": "6b049d48d94e1cc54a0d739b"
+  },
+  "materialId": {
+    "$oid": "6aa56d6a5ecec1ff24041883"
+  },
+  "materialName": "Плівка Oracal",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Серія",
+      "value": "640"
+    },
+    {
+      "name": "Покриття",
+      "value": "Глянець"
+    },
+    {
+      "name": "Колір",
+      "value": "010"
+    },
+    {
+      "name": "Ширина",
+      "value": "100 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b991"
+  },
+  "incomeId": {
+    "$oid": "6b049d5f37823192c50369f8"
+  },
+  "materialId": {
+    "$oid": "6aa56d6a5ecec1ff24041883"
+  },
+  "materialName": "Плівка Oracal",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Серія",
+      "value": "640"
+    },
+    {
+      "name": "Покриття",
+      "value": "Мат"
+    },
+    {
+      "name": "Колір",
+      "value": "010"
+    },
+    {
+      "name": "Ширина",
+      "value": "100 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b992"
+  },
+  "incomeId": {
+    "$oid": "6b049d7bd94e1cc54a0d739c"
+  },
+  "materialId": {
+    "$oid": "6aa566b37d39692ee20d13b2"
+  },
+  "materialName": "Банер",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "160 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b993"
+  },
+  "incomeId": {
+    "$oid": "6b049d7bd94e1cc54a0d739c"
+  },
+  "materialId": {
+    "$oid": "6aa566b37d39692ee20d13b2"
+  },
+  "materialName": "Банер",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "160 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6b05f12bea4b29951704b994"
+  },
+  "incomeId": {
+    "$oid": "6b049e4737823192c50369f9"
+  },
+  "materialId": {
+    "$oid": "6b049e32d94e1cc54a0d739d"
+  },
+  "materialName": "Плівка для DTF",
+  "type": "roll",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "60 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "100 м"
+    }
+  ],
+  "percentage": 100
+}]

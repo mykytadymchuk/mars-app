@@ -1,0 +1,626 @@
+[{
+  "_id": {
+    "$oid": "6b049ae9d94e1cc54a0d7394"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570925ecec1ff24041888"
+    }
+  ],
+  "materialName": "ПВХ",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "quantity": 3,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T19:58:33.572Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049b05d94e1cc54a0d7395"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570925ecec1ff24041888"
+    }
+  ],
+  "materialName": "ПВХ",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "quantity": 4,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T19:59:01.578Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049b2e37823192c50369f2"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570925ecec1ff24041888"
+    }
+  ],
+  "materialName": "ПВХ",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "1220 х 3050 мм"
+    }
+  ],
+  "quantity": 3,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T19:59:42.751Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049b73d94e1cc54a0d7396"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570657d39692ee20d13b8"
+    }
+  ],
+  "materialName": "Акрил",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "2 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "quantity": 2,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:00:51.835Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049b8d37823192c50369f3"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570657d39692ee20d13b8"
+    }
+  ],
+  "materialName": "Акрил",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Товщина",
+      "value": "4 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "quantity": 2,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:01:17.809Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049ba0d94e1cc54a0d7397"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570657d39692ee20d13b8"
+    }
+  ],
+  "materialName": "Акрил",
+  "parameters": [
+    {
+      "name": "Колір",
+      "value": "Молочний"
+    },
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Розмір",
+      "value": "2050 х 3050 мм"
+    }
+  ],
+  "quantity": 3,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:01:36.611Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049bb437823192c50369f4"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa566b37d39692ee20d13b2"
+    },
+    {
+      "$oid": "6aa56ced5ecec1ff24041882"
+    },
+    {
+      "$oid": "6aa56d227d39692ee20d13b3"
+    }
+  ],
+  "materialName": "Банер",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "110 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 2,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:01:56.995Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049bc2d94e1cc54a0d7398"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa566b37d39692ee20d13b2"
+    },
+    {
+      "$oid": "6aa56ced5ecec1ff24041882"
+    },
+    {
+      "$oid": "6aa56d227d39692ee20d13b3"
+    }
+  ],
+  "materialName": "Банер",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "320 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:02:10.522Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049c8e37823192c50369f5"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa570e97d39692ee20d13b9"
+    }
+  ],
+  "materialName": "АКП",
+  "parameters": [
+    {
+      "name": "Товщина",
+      "value": "3 мм"
+    },
+    {
+      "name": "Колір",
+      "value": "Білий"
+    },
+    {
+      "name": "Розмір",
+      "value": "1222 х 2440 мм"
+    }
+  ],
+  "quantity": 5,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:05:34.631Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049ca6d94e1cc54a0d7399"
+  },
+  "supplierId": {
+    "$oid": "6a9315b7d8e9ecfe0600edd5"
+  },
+  "supplierName": "Orly",
+  "supplierPhoto": "6a9315b7d8e9ecfe0600edd5.png",
+  "materialIds": [
+    {
+      "$oid": "6aa56ff15ecec1ff24041887"
+    }
+  ],
+  "materialName": "Холст",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "152 см"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:05:58.209Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049cba37823192c50369f6"
+  },
+  "supplierId": {
+    "$oid": "6a9315b7d8e9ecfe0600edd5"
+  },
+  "supplierName": "Orly",
+  "supplierPhoto": "6a9315b7d8e9ecfe0600edd5.png",
+  "materialIds": [
+    {
+      "$oid": "6aa56ff15ecec1ff24041887"
+    }
+  ],
+  "materialName": "Холст",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "127 см"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:06:18.166Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049ce5d94e1cc54a0d739a"
+  },
+  "supplierId": {
+    "$oid": "6a9315b7d8e9ecfe0600edd5"
+  },
+  "supplierName": "Orly",
+  "supplierPhoto": "6a9315b7d8e9ecfe0600edd5.png",
+  "materialIds": [
+    {
+      "$oid": "6aa56f707d39692ee20d13b6"
+    },
+    {
+      "$oid": "6aa56fa95ecec1ff24041886"
+    }
+  ],
+  "materialName": "Сітілайт",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Економ"
+    },
+    {
+      "name": "Ширина",
+      "value": "125 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "150 м"
+    },
+    {
+      "name": "Щільність",
+      "value": "150 г/м2"
+    }
+  ],
+  "quantity": 10,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:07:01.113Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049d0637823192c50369f7"
+  },
+  "supplierId": {
+    "$oid": "6a931b1a0366d3f9a70705a3"
+  },
+  "supplierName": "Prostir",
+  "supplierPhoto": "6a931b1a0366d3f9a70705a3.webp",
+  "materialIds": [
+    {
+      "$oid": "6aa56edb5ecec1ff24041884"
+    }
+  ],
+  "materialName": "Плівка Китай",
+  "parameters": [
+    {
+      "name": "Покриття",
+      "value": "Мат"
+    },
+    {
+      "name": "Колір",
+      "value": "Прозорий"
+    },
+    {
+      "name": "Ширина",
+      "value": "152 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:07:34.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049d48d94e1cc54a0d739b"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa56d6a5ecec1ff24041883"
+    },
+    {
+      "$oid": "6aa56e897d39692ee20d13b4"
+    }
+  ],
+  "materialName": "Плівка Oracal",
+  "parameters": [
+    {
+      "name": "Серія",
+      "value": "640"
+    },
+    {
+      "name": "Покриття",
+      "value": "Глянець"
+    },
+    {
+      "name": "Колір",
+      "value": "010"
+    },
+    {
+      "name": "Ширина",
+      "value": "100 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-03",
+  "createdAt": {
+    "$date": "2026-11-23T20:08:40.276Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049d5f37823192c50369f8"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa56d6a5ecec1ff24041883"
+    },
+    {
+      "$oid": "6aa56e897d39692ee20d13b4"
+    }
+  ],
+  "materialName": "Плівка Oracal",
+  "parameters": [
+    {
+      "name": "Серія",
+      "value": "640"
+    },
+    {
+      "name": "Покриття",
+      "value": "Мат"
+    },
+    {
+      "name": "Колір",
+      "value": "010"
+    },
+    {
+      "name": "Ширина",
+      "value": "100 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-03",
+  "createdAt": {
+    "$date": "2026-11-23T20:09:03.599Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049d7bd94e1cc54a0d739c"
+  },
+  "supplierId": {
+    "$oid": "6a9314b7d8e9ecfe0600edd3"
+  },
+  "supplierName": "Plastics",
+  "supplierPhoto": "6a9314b7d8e9ecfe0600edd3.svg",
+  "materialIds": [
+    {
+      "$oid": "6aa566b37d39692ee20d13b2"
+    },
+    {
+      "$oid": "6aa56ced5ecec1ff24041882"
+    },
+    {
+      "$oid": "6aa56d227d39692ee20d13b3"
+    }
+  ],
+  "materialName": "Банер",
+  "parameters": [
+    {
+      "name": "Тип",
+      "value": "Литий"
+    },
+    {
+      "name": "Ширина",
+      "value": "160 см"
+    },
+    {
+      "name": "Щільність",
+      "value": "440 г/м2"
+    },
+    {
+      "name": "Намотка",
+      "value": "50 м"
+    }
+  ],
+  "quantity": 2,
+  "incomeDate": "2026-11-03",
+  "createdAt": {
+    "$date": "2026-11-23T20:09:31.528Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6b049e4737823192c50369f9"
+  },
+  "supplierId": {
+    "$oid": "6a9315b7d8e9ecfe0600edd5"
+  },
+  "supplierName": "Orly",
+  "supplierPhoto": "6a9315b7d8e9ecfe0600edd5.png",
+  "materialIds": [
+    {
+      "$oid": "6b049e32d94e1cc54a0d739d"
+    }
+  ],
+  "materialName": "Плівка для DTF",
+  "parameters": [
+    {
+      "name": "Ширина",
+      "value": "60 см"
+    },
+    {
+      "name": "Намотка",
+      "value": "100 м"
+    }
+  ],
+  "quantity": 1,
+  "incomeDate": "2026-11-09",
+  "createdAt": {
+    "$date": "2026-11-23T20:12:55.469Z"
+  }
+}]

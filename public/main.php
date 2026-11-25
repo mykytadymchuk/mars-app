@@ -41,6 +41,10 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
       <img src="src/orders.png" alt="orders" draggable="false" />
       <p>Замовлення</p>
     </div>
+        <div class="main-function" id="customers-button">
+      <img src="src/customers.png" alt="customers" draggable="false" />
+      <p>Клієнти</p>
+    </div>
     <div class="main-function" id="employees-button">
       <img src="src/employees.png" alt="employees" draggable="false" />
       <p>Персонал</p>
@@ -77,6 +81,7 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
     const logoutButton = document.getElementById("logout-button");
 
     const ordersButton = document.getElementById("orders-button");
+    const customersButton = document.getElementById("customers-button");
     const employeesButton = document.getElementById("employees-button");
     const stockButton = document.getElementById("stock-button");
     const incomesButton = document.getElementById("incomes-button");
@@ -99,6 +104,10 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
 
     ordersButton.addEventListener("click", () => {
       window.location.href = "orders.php";
+    });
+
+    customersButton.addEventListener("click", () => {
+      window.location.href = "customers.php";
     });
 
     employeesButton.addEventListener("click", () => {

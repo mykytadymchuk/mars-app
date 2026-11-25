@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) { header('Location: ../login.php'); exit; }
 require_once __DIR__ . '/../../services/databaseConnect.php';
+require_once __DIR__ . '/stockFunctions.php';
 use MongoDB\BSON\ObjectId;
 
 $supplierId = $_POST['supplierId'] ?? '';
@@ -42,12 +43,16 @@ try {
     $income = ['supplierId' => $supplierObjectId, 'supplierName' => $supplier['Постачальник'] ?? '', 'supplierPhoto' => $supplier['Фото'] ?? '', 'materialIds' => $materialIds, 'materialName' => $materialName, 'parameters' => $parameters, 'quantity' => $quantity, 'incomeDate' => $incomeDate];
     if ($incomeId === '') {
         $income['createdAt'] = new MongoDB\BSON\UTCDateTime();
-        $incomesCollection->insertOne($income);
+        $result = $incomesCollection->insertOne($income);
+        replaceIncomeStock($income, $result->getInsertedId(), $materialsCollection, $stockCollection);
     } else {
         try { $incomeObjectId = new ObjectId($incomeId); } catch (Throwable $exception) { header('Location: ../incomes.php'); exit; }
+        $existingIncome = $incomesCollection->findOne(['_id' => $incomeObjectId]);
+        if (!$existingIncome) { header('Location: ../incomes.php'); exit; }
         $income['updatedAt'] = new MongoDB\BSON\UTCDateTime();
         $result = $incomesCollection->updateOne(['_id' => $incomeObjectId], ['$set' => $income]);
         if ($result->getMatchedCount() === 0) { header('Location: ../incomes.php'); exit; }
+        replaceIncomeStock($income, $incomeObjectId, $materialsCollection, $stockCollection);
     }
     header('Location: ../incomes.php'); exit;
 } catch (Throwable $exception) { header('Location: ../addIncome.php?error=unknown_error'); exit; }

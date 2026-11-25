@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6b0493065e9467672309b5e2"
+  },
+  "Логін": "admin",
+  "Пароль": "$2y$10$0/Q29ems1Go6svIlCN7sDewls3CHadqhMVeZr7UHW/O9ClT5Uc3Tq",
+  "Роль": "Адміністратор"
+},
+{
+  "_id": {
+    "$oid": "6b0497bbd94e1cc54a0d7393"
+  },
+  "Логін": "mykytadymchuk",
+  "Пароль": "$2y$10$FjSrwlZZ06VTsZ1Zrlug8O6uqDFMzZPjJfCBPpIoGBB06I2m7oxIS",
+  "Роль": "Друкар",
+  "Працівник ID": {
+    "$oid": "6b0497bbd94e1cc54a0d7392"
+  }
+}]

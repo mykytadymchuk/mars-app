@@ -16,3 +16,5 @@ $filesCollection = $db->selectCollection("files");
 $incomesCollection = $db->selectCollection("incomes");
 $employeesCollection = $db->selectCollection("employees");
 $rolesCollection = $db->selectCollection("roles");
+$customersCollection = $db->selectCollection("customers");
+$stockCollection = $db->selectCollection("stock");
