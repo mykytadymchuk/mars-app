@@ -1,0 +1,571 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-chat-unread-badge[hidden] {
+  display: none;
+}
+
+.global-chat-notification {
+  position: fixed;
+  z-index: 1100;
+  top: 20px;
+  right: 20px;
+  width: min(380px, calc(100vw - 32px));
+  padding: 14px 18px;
+  border: 2px solid #c11007;
+  border-radius: 12px;
+  background: #fff;
+  color: #262626;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, .28);
+  font: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.global-chat-notification.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@media (max-width: 760px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main-header {
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 6px 10px;
+    overflow: visible;
+  }
+
+  .main-header #header-logo {
+    width: 92px;
+    max-height: 48px;
+    object-fit: contain;
+    margin: 2px;
+  }
+
+  .main-header .header-right-corner {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 2px 4px;
+    align-items: flex-end;
+  }
+
+  #main-greetings {
+    font-size: clamp(17px, 4vw, 24px);
+    line-height: 1.15;
+    text-align: right;
+  }
+
+  .main-header > .search-bar-container {
+    order: 5;
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .search-bar-container {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .search-bar {
+    min-width: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 9px 10px;
+  }
+
+  .search-select {
+    max-width: 42%;
+    min-width: 0;
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+
+  .search-button img,
+  .send-message-button img {
+    width: 38px;
+    padding: 8px;
+  }
+
+  .add-new-item {
+    flex: 0 0 auto;
+    margin: 2px;
+    padding: 4px 16px;
+    font-size: 24px;
+  }
+
+  .none-message {
+    padding: 0 14px;
+    text-align: center;
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .page-title {
+    font-size: clamp(21px, 6vw, 28px);
+    text-align: center;
+    margin: 0 0 28px;
+  }
+
+  /* Form pages and account login */
+  .general-container,
+  .main-body {
+    width: 100%;
+  }
+
+  .main-body {
+    min-height: 0;
+    height: auto;
+    padding: 24px 14px;
+  }
+
+  .general-container {
+    min-height: 100vh;
+    padding: 12px;
+  }
+
+  .logo {
+    width: min(230px, 72vw);
+    height: auto;
+    margin: 24px auto 28px;
+  }
+
+  .main-body form {
+    width: min(100%, 430px);
+  }
+
+  .form-row,
+  .text-input,
+  #employeeRole,
+  #password,
+  .supplier-photo-upload,
+  .file-input,
+  .password-wrapped {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-element {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .radio-options,
+  .file-type-options {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .form-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .form-buttons button,
+  .form-buttons input {
+    padding: 12px 16px;
+    font-size: 17px;
+  }
+
+  .custom-field-row .text-input {
+    width: 100%;
+  }
+
+  .custom-field-cols-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .custom-field-cols-element,
+  .custom-field-cols-element:first-child,
+  .custom-field-cols-element:last-child,
+  .values-column {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .remove-custom-field {
+    margin-top: 0;
+    align-self: flex-end;
+  }
+
+  .custom-field-value-row {
+    min-width: 0;
+  }
+
+  .supplier-photo-preview {
+    max-width: calc(100% - 24px);
+    max-height: 180px;
+  }
+
+  /* Main navigation cards */
+  .main-body:has(.main-function) {
+    min-height: calc(100vh - 80px);
+    align-content: flex-start;
+    gap: 14px;
+    padding: 18px 14px 28px;
+  }
+
+  .main-function {
+    width: min(100%, 420px);
+    height: 190px;
+    flex: 1 1 100%;
+  }
+
+  .main-function img {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 12px;
+  }
+
+  .main-function p {
+    font-size: 23px;
+  }
+
+  /* Employee, customer, supplier and file cards */
+  .main-body:has(.flex-element) {
+    height: auto;
+    min-height: calc(100vh - 105px);
+    overflow: visible;
+    align-content: flex-start;
+    gap: 16px;
+    padding: 130px 14px 24px;
+  }
+
+  .flex-element {
+    width: min(100%, 430px);
+    max-width: 100%;
+  }
+
+  .flex-element:hover {
+    transform: none;
+  }
+
+  .flex-element-info-container {
+    width: calc(100% - 28px);
+    min-width: 0;
+    overflow-wrap: anywhere;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .flex-element-edit-container {
+    margin-bottom: 18px;
+  }
+
+  /* Table pages: materials, stock, incomes */
+  body:has(.table) {
+    padding-top: 110px;
+  }
+
+  .main-body:has(.table) {
+    width: 100%;
+    margin: 12px 0 20px;
+    padding: 0 10px 24px;
+    gap: 16px;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 12px 10px;
+    overflow: visible;
+  }
+
+  .table-header {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .table-element {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .left-side,
+  .right-side {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .left-side {
+    flex: 1 1 100%;
+  }
+
+  .right-side {
+    flex: 1 1 100%;
+    padding: 4px 10px;
+  }
+
+  .income-number,
+  .material-number,
+  .income-position,
+  .material-position {
+    padding: 4px 7px;
+    overflow-wrap: anywhere;
+  }
+
+  .supplier-logo {
+    width: 76px;
+    max-height: 76px;
+    object-fit: contain;
+    padding: 4px;
+  }
+
+  .multiple-params {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .mid-side {
+    justify-content: flex-start;
+    padding: 4px 10px;
+  }
+
+  .material-type {
+    align-self: stretch;
+    margin: 8px 10px 0;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .nav-bar {
+    max-width: calc(100% - 20px);
+    margin: 12px auto;
+    font-size: 15px;
+  }
+
+  .mid-section {
+    min-width: 0;
+    padding: 8px 10px;
+    overflow-wrap: anywhere;
+  }
+
+  .income-range-form {
+    width: calc(100% - 24px);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 12px;
+    padding: 10px;
+  }
+
+  .income-range-form label {
+    flex-wrap: wrap;
+  }
+
+  .files-navigation {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* Chat */
+  .chat-general-container {
+    position: fixed;
+    inset: 112px 8px 8px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(118px, 28%) minmax(0, 1fr);
+    border-width: 2px;
+    border-radius: 12px;
+  }
+
+  .main-body:has(.chat-general-container) {
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+
+  .chats-list-container {
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    min-width: 0;
+  }
+
+  .chat-search-container {
+    padding: 6px;
+  }
+
+  .chat-list {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 6px 6px;
+  }
+
+  .chat-list hr {
+    display: none;
+  }
+
+  .chat-element {
+    flex: 0 0 170px;
+    min-width: 0;
+    align-items: center;
+  }
+
+  .chat-picture-container {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .chat-info-container {
+    min-width: 0;
+    margin: 5px;
+    overflow: hidden;
+  }
+
+  .chat-name {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .last-message-sent-time {
+    font-size: 12px;
+  }
+
+  .chat-info-container-secondrow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .active-chat-window-container {
+    grid-row: 2;
+    min-height: 0;
+  }
+
+  .active-chat-header {
+    flex: 0 0 58px;
+    height: 58px;
+    min-width: 0;
+    justify-content: flex-start;
+    padding-left: 58px;
+  }
+
+  .active-chat-picture {
+    left: 0;
+    width: 56px;
+    height: 56px;
+  }
+
+  .active-chat-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+  }
+
+  .active-chat-main {
+    padding: 10px 8px;
+    gap: 8px;
+  }
+
+  .message-row {
+    width: min(92%, 520px);
+    min-width: 0;
+  }
+
+  .message-content {
+    min-width: 0;
+    padding: 7px;
+    overflow-wrap: anywhere;
+  }
+
+  .message-sender {
+    font-size: 15px;
+  }
+
+  .message-sent-time {
+    padding-left: 6px;
+    font-size: 12px;
+  }
+
+  .sender-photo {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    padding: 5px;
+  }
+
+  .active-chat-footer {
+    flex: 0 0 62px;
+    height: 62px;
+    padding: 7px;
+  }
+
+  .message-compose {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-header #header-logo {
+    width: 76px;
+  }
+
+  .main-header .header-right-corner {
+    margin-right: 0;
+  }
+
+  .form-buttons button,
+  .form-buttons input {
+    flex: 1 1 auto;
+  }
+
+  .table {
+    padding: 10px 7px;
+  }
+
+  .chat-element {
+    flex-basis: 150px;
+  }
+
+  .message-row {
+    width: 96%;
+  }
+}

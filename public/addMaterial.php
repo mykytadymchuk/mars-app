@@ -46,6 +46,7 @@ $messages['unknown_error'] = 'Матеріал не вдалося додати.
 	<link rel="stylesheet" href="styles/form-style.css" />
 	<link rel="stylesheet" href="styles/general-style.css" />
 	<title>Додавання матеріалу</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -163,6 +164,7 @@ $messages['unknown_error'] = 'Матеріал не вдалося додати.
 			});
 		});
 	</script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

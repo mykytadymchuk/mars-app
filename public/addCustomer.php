@@ -31,6 +31,7 @@ $messages = [
   <link rel="stylesheet" href="styles/form-style.css" />
   <link rel="stylesheet" href="styles/general-style.css" />
   <title>Додавання клієнта</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
   <div class="main-header"><img src="src/logo.jpg" alt="mars-logo" id="header-logo" draggable="false" />
@@ -91,5 +92,6 @@ $messages = [
       reader.readAsDataURL(file);
     }
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 </html>

@@ -49,6 +49,7 @@ $messages = ["empty_name" => "Введіть прізвище та ім'я пр�
     <link rel="stylesheet" href="styles/form-style.css" />
     <link rel="stylesheet" href="styles/general-style.css" />
     <title>Редагування працівника</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -109,6 +110,7 @@ $messages = ["empty_name" => "Введіть прізвище та ім'я пр�
         <div class="form-buttons"><button type="submit" id="fire-button">Звільнити</button></div>
     </form>
     <script>document.getElementById("fire-form").addEventListener("submit", (event) => { if (!confirm("Ви впевнені, що хочете звільнити працівника?")) event.preventDefault(); });</script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

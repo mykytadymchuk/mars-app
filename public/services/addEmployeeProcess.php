@@ -4,6 +4,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) { header(
 
 require_once __DIR__ . '/../../services/databaseConnect.php';
 require_once __DIR__ . '/functions.php';
+require_once __DIR__ . '/chatFunctions.php';
 
 use MongoDB\BSON\ObjectId;
 
@@ -49,6 +50,14 @@ try {
     } catch (Exception $e) {
         $employeesCollection->deleteOne(['_id' => $employeeId]);
         throw $e;
+    }
+    $newUser = $usersCollection->findOne(['Логін' => $username]);
+    if ($newUser) {
+        try {
+            ensureDirectChatsForUser($newUser, $usersCollection, $chatsCollection);
+        } catch (Throwable $e) {
+            // Chat page completes missing personal chats on next visit.
+        }
     }
 
     header('Location: ../employees.php');

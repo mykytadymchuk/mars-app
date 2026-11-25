@@ -37,6 +37,7 @@ $employees = $employeesCollection->find($query)->toArray();
   <link rel="stylesheet" href="styles/page-header-style.css" />
   <link rel="stylesheet" href="styles/employees-style.css" />
   <title>Працівники</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -116,6 +117,7 @@ $employees = $employeesCollection->find($query)->toArray();
     document.getElementById("header-logo").onclick = () => location.href = "main.php"; document.getElementById("add-new-employee").onclick = () => location.href = "addEmployee.php"; document.querySelectorAll(".flex-element-edit[data-id]").forEach(e => e.onclick = () => location.href = `editEmployee.php?id=${e.dataset.id}`);
     function tenure(date) { const start = new Date(`${date}T00:00:00`), today = new Date(); if (Number.isNaN(start.getTime()) || start > today) return "—"; let y = today.getFullYear() - start.getFullYear(), m = today.getMonth() - start.getMonth(), d = today.getDate() - start.getDate(); if (d < 0) { m--; d += new Date(today.getFullYear(), today.getMonth(), 0).getDate(); } if (m < 0) { y--; m += 12; } return `${y} р., ${m} міс., ${d} дн.`; } document.querySelectorAll(".employee-tenure").forEach(e => e.textContent = tenure(e.dataset.hireDate));
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

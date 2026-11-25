@@ -29,6 +29,7 @@ $error = $_GET["error"] ?? null;
   <link rel="stylesheet" href="styles/form-style.css" />
   <link rel="stylesheet" href="styles/general-style.css" />
   <title>Редагування акаунту</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -97,6 +98,7 @@ $error = $_GET["error"] ?? null;
     eyeButton.addEventListener("touchstart", (event) => { event.preventDefault(); passwordInput.type = "text"; });
     eyeButton.addEventListener("touchend", (event) => { event.preventDefault(); passwordInput.type = "password"; });
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

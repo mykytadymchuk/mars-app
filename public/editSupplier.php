@@ -85,6 +85,7 @@ foreach ($supplier as $fieldName => $fieldValue) {
     <link rel="stylesheet" href="styles/form-style.css" />
     <link rel="stylesheet" href="styles/general-style.css" />
     <title>Редагування постачальника</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -369,6 +370,7 @@ foreach ($supplier as $fieldName => $fieldValue) {
 
         }
     </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

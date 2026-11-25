@@ -77,6 +77,7 @@ foreach ($allMaterials as $material) {
     <link rel="stylesheet" href="styles/search-bar-style.css" />
     <link rel="stylesheet" href="styles/page-header-style.css" />
     <title>Матеріали</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -579,6 +580,7 @@ foreach ($allMaterials as $material) {
             window.location.href = "addMaterial.php";
         });
     </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

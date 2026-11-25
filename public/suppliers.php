@@ -62,6 +62,7 @@ $suppliers = $suppliersCollection->find($query)->toArray();
   <link rel="stylesheet" href="styles/page-header-style.css" />
   <link rel="stylesheet" href="styles/suppliers-style.css" />
   <title>Постачальники</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -223,6 +224,7 @@ $suppliers = $suppliersCollection->find($query)->toArray();
       window.location.href = "addSupplier.php";
     });
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

@@ -6,6 +6,18 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
   header("Location: login.php");
   exit;
 }
+require_once __DIR__ . '/../services/databaseConnect.php';
+require_once __DIR__ . '/services/chatFunctions.php';
+$currentUser = $usersCollection->findOne(['Логін' => $_SESSION['username']]);
+if (!$currentUser) {
+  session_destroy();
+  header('Location: login.php');
+  exit;
+}
+$unreadMessageCount = 0;
+foreach ($chatsCollection->find()->toArray() as $chat) {
+  if (canAccessChat($chat, $currentUser)) $unreadMessageCount += unreadCountForChat($chat, $currentUser);
+}
 
 ?>
 
@@ -25,6 +37,7 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
   <link rel="stylesheet" href="styles/general-style.css" />
   <link rel="stylesheet" href="styles/main-header-style.css" />
   <title>Головна сторінка</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -60,6 +73,7 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
     <div class="main-function" id="chat-button">
       <img src="src/chat.png" alt="chat" draggable="false" />
       <p>Чат</p>
+      <?php if ($unreadMessageCount > 0): ?><span id="chat-unread-badge" class="main-chat-unread-badge" data-count="<?= $unreadMessageCount ?>"><?= $unreadMessageCount > 99 ? '99+' : $unreadMessageCount ?></span><?php else: ?><span id="chat-unread-badge" class="main-chat-unread-badge" data-count="0" hidden></span><?php endif; ?>
     </div>
     <div class="main-function" id="files-button">
       <img src="src/files.png" alt="files" draggable="false" />
@@ -137,7 +151,9 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
     suppliersButton.addEventListener("click", () => {
       window.location.href = "suppliers.php";
     });
+
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

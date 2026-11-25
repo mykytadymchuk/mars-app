@@ -33,6 +33,7 @@ $messages = ['empty_name' => 'Введіть назву.', 'file_required' => '�
     <link rel="stylesheet" href="styles/general-style.css" />
     <link rel="stylesheet" href="styles/files-style.css" />
     <title>Додавання файлу</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -77,6 +78,7 @@ $messages = ['empty_name' => 'Введіть назву.', 'file_required' => '�
         area.ondragleave = () => area.classList.remove('dragover');
         area.ondrop = event => { event.preventDefault(); area.classList.remove('dragover'); if (event.dataTransfer.files.length) { input.files = event.dataTransfer.files; showName(); } };
     </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

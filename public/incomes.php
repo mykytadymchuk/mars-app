@@ -68,6 +68,7 @@ foreach ($incomes as $income)
     <link rel="stylesheet" href="styles/page-header-style.css" />
     <link rel="stylesheet" href="styles/nav-bar-style.css" />
     <title>Надходження</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -120,6 +121,7 @@ foreach ($incomes as $income)
             </section><?php endforeach; ?>
     </main>
     <script>document.getElementById('header-logo').onclick = () => location.href = 'main.php'; document.getElementById('add-new-income').onclick = () => location.href = 'addIncome.php'; document.getElementById('range-toggle').onclick = () => document.getElementById('range-form').hidden = !document.getElementById('range-form').hidden; document.querySelector('form[action=""]').addEventListener('submit', event => { const state = document.createElement('input'); state.type = 'hidden'; state.name = <?= $customRange ? "'start'" : "'week'" ?>; state.value = <?= $customRange ? json_encode($startDate) : json_encode((string) $weekOffset) ?>; event.currentTarget.appendChild(state);<?php if ($customRange): ?>const end = document.createElement('input'); end.type = 'hidden'; end.name = 'end'; end.value = <?= json_encode($endDate) ?>; event.currentTarget.appendChild(end); <?php endif; ?> }); document.querySelectorAll('.left-arrow,.right-arrow').forEach(link => link.addEventListener('click', () => { const url = new URL(link.href); url.searchParams.set('field', <?= json_encode($searchField) ?>); url.searchParams.set('search', <?= json_encode($search) ?>); link.href = url.toString(); }));</script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

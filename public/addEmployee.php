@@ -34,6 +34,7 @@ $messages = ["empty_name" => "Введіть прізвище та ім'я пр�
   <link rel="stylesheet" href="styles/form-style.css" />
   <link rel="stylesheet" href="styles/general-style.css" />
   <title>Додавання працівника</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -67,6 +68,7 @@ $messages = ["empty_name" => "Введіть прізвище та ім'я пр�
     <script>alert(<?= json_encode($messages[$error]) ?>); window.history.replaceState({}, document.title, window.location.pathname);</script>
   <?php endif; ?>
   <script>document.getElementById("header-logo").addEventListener("click", () => window.location.href = "main.php"); document.getElementById("cancel-button").addEventListener("click", () => window.location.href = "employees.php");</script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

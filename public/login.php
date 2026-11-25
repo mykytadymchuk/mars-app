@@ -25,6 +25,7 @@ $error = $_GET["error"] ?? null;
     rel="stylesheet" />
   <link rel="stylesheet" href="styles/form-style.css" />
   <link rel="stylesheet" href="styles/general-style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>

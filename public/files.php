@@ -31,6 +31,7 @@ usort($items, static function ($left, $right): int {
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="src/mars-reklama.com.ua-favicon.ico" type="image/png" />
 <link rel="stylesheet" href="styles/general-style.css" /><link rel="stylesheet" href="styles/flex-grid-page-style.css" /><link rel="stylesheet" href="styles/search-bar-style.css" /><link rel="stylesheet" href="styles/page-header-style.css" /><link rel="stylesheet" href="styles/files-style.css" /><title>Файли</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head><body>
 <form method="get"><div class="main-header"><img src="src/logo.jpg" alt="mars-logo" id="header-logo" draggable="false" />
 <?php if ($currentFolder): ?><input type="hidden" name="folder" value="<?= htmlspecialchars((string) $currentFolder['_id']) ?>" /><?php endif; ?>
@@ -54,4 +55,5 @@ document.querySelectorAll('.file-card[data-folder-id]').forEach(card=>card.oncli
 document.querySelectorAll('.file-card[data-file-url]').forEach(card=>card.onclick=event=>{if(event.target.closest('.flex-element-edit-container'))return;const link=document.createElement('a');link.href=card.dataset.fileUrl;link.download=card.dataset.downloadName;link.style.display='none';document.body.appendChild(link);link.click();link.remove();});
 document.querySelectorAll('.file-edit').forEach(button=>button.onclick=event=>{event.stopPropagation();location.href='editFile.php?id='+encodeURIComponent(button.dataset.id);});
 document.querySelectorAll('.file-action-form').forEach(form=>{form.onclick=event=>event.stopPropagation();const remove=()=>{if(confirm('Ви впевнені, що хочете видалити цей елемент?'))form.requestSubmit();};form.querySelector('.file-delete').onclick=remove;form.querySelector('.file-delete').onkeydown=event=>{if(event.key==='Enter'||event.key===' ') {event.preventDefault();remove();}};});
-</script></body></html>
+</script>  <script src="scripts/chat-notifications.js" defer></script>
+</body></html>

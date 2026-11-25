@@ -29,6 +29,7 @@ $error = $_GET["error"] ?? null;
     <link rel="stylesheet" href="styles/form-style.css" />
     <link rel="stylesheet" href="styles/general-style.css" />
     <title>Додавання постачальника</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
@@ -94,6 +95,7 @@ $error = $_GET["error"] ?? null;
         cancelButton.addEventListener("click", () => { window.location.href = "suppliers.php"; });
 
     </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 
 </html>

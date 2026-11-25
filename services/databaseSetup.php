@@ -17,6 +17,7 @@ $employeesCollection = "employees";
 $rolesCollection = "roles";
 $customersCollection = "customers";
 $stockCollection = "stock";
+$chatsCollection = "chats";
 
 // Check whether database exists
 $databaseExists = false;
@@ -44,6 +45,7 @@ if (!$databaseExists) {
     $db->createCollection($rolesCollection);
     $db->createCollection($customersCollection);
     $db->createCollection($stockCollection);
+    $db->createCollection($chatsCollection);
 
     // Get users collection
     $users = $db->selectCollection($usersCollection);
@@ -76,6 +78,7 @@ if (!$databaseExists) {
     echo "Collection '$rolesCollection' created successfully.<br>";
     echo "Collection '$customersCollection' created successfully.<br>";
     echo "Collection '$stockCollection' created successfully.<br>";
+    echo "Collection '$chatsCollection' created successfully.<br>";
     echo "Admin user created successfully.<br>";
 
 } else {

@@ -32,6 +32,7 @@ $customers = $customersCollection->find($query)->toArray();
   <link rel="stylesheet" href="styles/page-header-style.css" />
   <link rel="stylesheet" href="styles/employees-style.css" />
   <title>Клієнти</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
   <form method="get">
@@ -79,5 +80,6 @@ $customers = $customersCollection->find($query)->toArray();
     document.getElementById("add-new-customer").onclick = () => location.href = "addCustomer.php";
     document.querySelectorAll(".flex-element-edit[data-id]").forEach(button => button.onclick = () => location.href = `editCustomer.php?id=${encodeURIComponent(button.dataset.id)}`);
   </script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 </html>

@@ -83,6 +83,7 @@ function stockText($value): string { return htmlspecialchars((string) $value, EN
   <link rel="stylesheet" href="styles/search-bar-style.css" />
   <link rel="stylesheet" href="styles/page-header-style.css" />
   <title>Склад</title>
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
   <form method="get"><div class="main-header">
@@ -116,5 +117,6 @@ function stockText($value): string { return htmlspecialchars((string) $value, EN
     <?php endforeach; ?>
   </main>
   <script>document.getElementById("header-logo").addEventListener("click", () => window.location.href = "main.php");</script>
+  <script src="scripts/chat-notifications.js" defer></script>
 </body>
 </html>
