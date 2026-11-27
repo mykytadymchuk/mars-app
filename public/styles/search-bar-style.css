@@ -13,13 +13,13 @@
 }
 
 .search-button img {
-  width: 25px;
-  padding: 10px;
+  width: 34px;
+  padding: 8px;
   object-fit: contain;
 }
 
 .send-message-button img {
-  width: 30px;
+  width: 34px;
   padding: 8px;
   object-fit: contain;
 }
