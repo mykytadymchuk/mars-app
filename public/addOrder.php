@@ -11,7 +11,7 @@ $order = null;
 if ($id !== '') {
     try { $order = $ordersCollection->findOne(['_id' => new ObjectId($id)]); } catch (Throwable $e) { header('Location: orders.php'); exit; }
     if (!$order) { header('Location: orders.php'); exit; }
-    if (!orderIsResponsibleManager($order, $user)) { header('Location: order.php?id=' . rawurlencode($id)); exit; }
+    if (!orderIsResponsibleManager($order, $user) || (string) ($order['status'] ?? '') === 'Готове') { header('Location: order.php?id=' . rawurlencode($id)); exit; }
 }
 $customers = [];
 foreach ($customersCollection->find([], ['sort' => ['Прізвище' => 1, 'Назва компанії' => 1]]) as $customer) {

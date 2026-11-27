@@ -73,13 +73,15 @@ $employees = $employeesCollection->find($query)->toArray();
       $dismissedStatus = "\xD0\x97\xD0\xB2\xD1\x96\xD0\xBB\xD1\x8C\xD0\xBD\xD0\xB5\xD0\xBD\xD0\xBE";
       $status = $employee[$statusField] ?? "\xD0\x9F\xD1\x80\xD0\xB0\xD1\x86\xD1\x8E\xD1\x94";
       $employeeUsername = $employee["\xD0\x9B\xD0\xBE\xD0\xB3\xD1\x96\xD0\xBD"] ?? "";
+      $linkedUser = $employeeUsername !== '' ? $usersCollection->findOne(["Логін" => $employeeUsername]) : null;
+      $ordersUrl = $linkedUser ? "employeeOrders.php?employeeId=" . rawurlencode((string) $employee["_id"]) : "";
       $firstPassword = $employee["\xD0\x9F\xD0\xB5\xD1\x80\xD1\x88\xD0\xB8\xD0\xB9 \xD0\xBF\xD0\xB0\xD1\x80\xD0\xBE\xD0\xBB\xD1\x8C"] ?? "";
       foreach ($employee as $key => $value) {
         if (!in_array($key, $reserved, true) && $key !== $statusField)
           $custom[$key] = $value;
       }
       ?>
-      <div class="flex-element"><img src="<?= htmlspecialchars($photo) ?>" alt="employee" class="employee-photo"
+      <div class="flex-element employee-order-card" <?= $ordersUrl !== '' ? 'data-orders-url="' . htmlspecialchars($ordersUrl, ENT_QUOTES) . '" tabindex="0" role="link"' : '' ?>><img src="<?= htmlspecialchars($photo) ?>" alt="employee" class="employee-photo"
           draggable="false" />
         <div class="flex-element-main-info-container">
           <p class="flex-element-name"><?= htmlspecialchars("$lastName $firstName") ?></p>
@@ -115,6 +117,7 @@ $employees = $employeesCollection->find($query)->toArray();
   </div>
   <script>
     document.getElementById("header-logo").onclick = () => location.href = "main.php"; document.getElementById("add-new-employee").onclick = () => location.href = "addEmployee.php"; document.querySelectorAll(".flex-element-edit[data-id]").forEach(e => e.onclick = () => location.href = `editEmployee.php?id=${e.dataset.id}`);
+    document.querySelectorAll(".employee-order-card[data-orders-url]").forEach(card => { const open = event => { if (event.target.closest(".flex-element-edit-container, form")) return; location.href = card.dataset.ordersUrl; }; card.addEventListener("click", open); card.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(event); } }); });
     function tenure(date) { const start = new Date(`${date}T00:00:00`), today = new Date(); if (Number.isNaN(start.getTime()) || start > today) return "—"; let y = today.getFullYear() - start.getFullYear(), m = today.getMonth() - start.getMonth(), d = today.getDate() - start.getDate(); if (d < 0) { m--; d += new Date(today.getFullYear(), today.getMonth(), 0).getDate(); } if (m < 0) { y--; m += 12; } return `${y} р., ${m} міс., ${d} дн.`; } document.querySelectorAll(".employee-tenure").forEach(e => e.textContent = tenure(e.dataset.hireDate));
   </script>
   <script src="scripts/chat-notifications.js" defer></script>

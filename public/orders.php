@@ -58,7 +58,7 @@ foreach ($orders as $order) $ordersByDate[$order['createdDate'] ?? ''][] = $orde
           <ul><?php foreach (($order['items'] ?? []) as $item): ?><li><?= orderText($item['printType'] ?? '') ?> · <?= orderText($item['materialName'] ?? '') ?><?php if (!empty($item['parameters'])): ?> (<?= orderText(implode(', ', array_map(static fn($parameter) => (string) ($parameter['value'] ?? ''), orderValues($item['parameters'])))) ?>)<?php endif; ?></li><?php endforeach; ?></ul>
           <div class="order-card-actions"><a class="order-action-button" href="order.php?id=<?= rawurlencode($orderId) ?>">Відкрити замовлення</a>
             <?php if (($designer && $status === 'Створено' && empty($order['assignedDesignerId'])) || ($printer && $status === 'Очікує виконання') || ($postworker && $status === 'Очікує постобробки')): ?><form method="post" action="services/orderActionProcess.php"><input type="hidden" name="id" value="<?= orderText($orderId) ?>" /><input type="hidden" name="action" value="<?= $designer ? 'designer_accept' : ($printer ? 'printer_accept' : 'postworker_accept') ?>" /><button class="order-action-button" type="submit">Прийняти</button></form><?php endif; ?>
-            <?php if ($manager && orderIsResponsibleManager($order, $user)): ?><a class="order-action-button" href="addOrder.php?id=<?= rawurlencode($orderId) ?>">Редагувати</a><?php endif; ?>
+            <?php if ($manager && $status !== 'Готове' && orderIsResponsibleManager($order, $user)): ?><a class="order-action-button" href="addOrder.php?id=<?= rawurlencode($orderId) ?>">Редагувати</a><?php endif; ?>
           </div>
         </article>
       <?php endforeach; ?>

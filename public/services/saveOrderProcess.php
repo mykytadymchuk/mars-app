@@ -14,7 +14,7 @@ if ($orderId !== '') {
     try { $objectId = new ObjectId($orderId); } catch (Throwable $e) { header('Location: ../orders.php'); exit; }
     $existing = $ordersCollection->findOne(['_id' => $objectId]);
     if (!$existing) { header('Location: ../orders.php'); exit; }
-    if (!orderIsResponsibleManager($existing, $user)) { header('Location: ../order.php?id=' . rawurlencode($orderId)); exit; }
+    if (!orderIsResponsibleManager($existing, $user) || (string) ($existing['status'] ?? '') === 'Готове') { header('Location: ../order.php?id=' . rawurlencode($orderId)); exit; }
 } else {
     $objectId = new ObjectId();
 }

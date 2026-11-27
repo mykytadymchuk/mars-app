@@ -56,12 +56,11 @@ $customers = $customersCollection->find($query)->toArray();
       $photo = !empty($customer["Фото"]) ? "src/customers/" . rawurlencode($customer["Фото"]) : "src/no-profile-photo.png";
       $reserved = ["_id", "Тип клієнта", "Прізвище", "Імʼя", "По-батькові", "Назва компанії", "Номер телефону", "Фото"];
       ?>
-      <div class="flex-element customer-card">
+      <div class="flex-element customer-card customer-order-card" data-orders-url="customerOrders.php?customerId=<?= rawurlencode((string) $customer['_id']) ?>" tabindex="0" role="link">
         <img src="<?= htmlspecialchars($photo) ?>" alt="customer" class="employee-photo" draggable="false" />
         <div class="flex-element-main-info-container"><p class="flex-element-name"><?= htmlspecialchars($name) ?></p><p class="employee-role"><?= ($customer["Тип клієнта"] ?? "") === "legal" ? "Юридична особа" : "Фізична особа" ?></p></div>
         <div class="flex-element-info-container">
        <hr>
-          
           <p><span class="row-title">Номер телефону:</span> <?= htmlspecialchars($formattedPhone) ?></p>
           <?php foreach ($customer as $key => $value): ?>
             <?php if (!in_array($key, $reserved, true) && (is_scalar($value) || $value instanceof Stringable)): ?>
@@ -79,6 +78,7 @@ $customers = $customersCollection->find($query)->toArray();
     document.getElementById("header-logo").onclick = () => location.href = "main.php";
     document.getElementById("add-new-customer").onclick = () => location.href = "addCustomer.php";
     document.querySelectorAll(".flex-element-edit[data-id]").forEach(button => button.onclick = () => location.href = `editCustomer.php?id=${encodeURIComponent(button.dataset.id)}`);
+    document.querySelectorAll(".customer-order-card").forEach(card => { const open = event => { if (event.target.closest(".flex-element-edit-container")) return; location.href = card.dataset.ordersUrl; }; card.addEventListener("click", open); card.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(event); } }); });
   </script>
   <script src="scripts/chat-notifications.js" defer></script>
 </body>

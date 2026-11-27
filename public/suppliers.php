@@ -152,7 +152,7 @@ $suppliers = $suppliersCollection->find($query)->toArray();
 
         ?>
 
-        <div class="flex-element">
+        <div class="flex-element supplier-income-card" data-incomes-url="supplierIncomes.php?supplierId=<?= rawurlencode((string) $supplier['_id']) ?>" tabindex="0" role="link">
 
           <img src="<?= $supplierPhoto ?>" alt="supplier" class="supplier-photo" draggable="false" />
 
@@ -215,6 +215,7 @@ $suppliers = $suppliersCollection->find($query)->toArray();
         window.location.href = `editSupplier.php?id=${supplierId}`;
       });
     });
+    document.querySelectorAll(".supplier-income-card").forEach(card => { const open = event => { if (event.target.closest(".flex-element-edit-container")) return; window.location.href = card.dataset.incomesUrl; }; card.addEventListener("click", open); card.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(event); } }); });
 
     marsLogo.addEventListener("click", () => {
       window.location.href = "main.php";

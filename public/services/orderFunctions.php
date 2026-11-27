@@ -33,8 +33,9 @@ function orderIsResponsibleManager($order, $user): bool
 {
     if (!orderIsManager($user)) return false;
     $responsibleId = $order['createdBy']['userId'] ?? null;
-    if ($responsibleId !== null && isset($user['_id'])) return (string) $responsibleId === (string) $user['_id'];
-    return (string) ($order['createdBy']['username'] ?? '') !== '' && (string) ($order['createdBy']['username'] ?? '') === (string) ($user['Логін'] ?? '');
+    if ($responsibleId !== null && isset($user['_id']) && (string) $responsibleId === (string) $user['_id']) return true;
+    $responsibleUsername = (string) ($order['createdBy']['username'] ?? '');
+    return $responsibleUsername !== '' && $responsibleUsername === (string) ($user['Логін'] ?? '');
 }
 function orderText($value): string { return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8'); }
 

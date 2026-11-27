@@ -17,3 +17,8 @@
   margin-top: 10px;
   font-size: 18px;
 }
+
+.employee-order-card[data-orders-url] { cursor: pointer; }
+.employee-order-card[data-orders-url]:focus-visible { outline: 3px solid #c11007; outline-offset: 3px; }
+.customer-order-card { cursor: pointer; }
+.customer-order-card:focus-visible { outline: 3px solid #c11007; outline-offset: 3px; }
